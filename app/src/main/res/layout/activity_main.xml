@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="279dp"
+        android:layout_height="263dp"
+        android:background="@drawable/boun"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267">
+
+        <CheckBox
+            android:id="@+id/A1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paskuhan" />
+        <CheckBox
+            android:id="@+id/A2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recollection at Caleruega" />
+        <CheckBox
+            android:id="@+id/A3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programming Competition" />
+        <CheckBox
+            android:id="@+id/A4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coastal Cleanup Drive at Roxas Blvd." />
+        <CheckBox
+            android:id="@+id/A5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seminar on Kotlin" />
+        <CheckBox
+            android:id="@+id/A6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Building" />
+        <CheckBox
+            android:id="@+id/A7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Field Trip at South Luzon" />
+        <CheckBox
+            android:id="@+id/A8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training on Web Technologies" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/writeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="writeData"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showData"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPCOMING ACTIVITIES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments:"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="292dp"
+        android:layout_height="158dp"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856"
+        android:background="@drawable/boun"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
